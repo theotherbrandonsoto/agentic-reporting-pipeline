@@ -1,0 +1,21 @@
+version: 2
+models:
+  - name: stg_daily_issues
+    description: "Cleaned daily issue records — one row per date/product/issue_type"
+    columns:
+      - name: issue_date
+        tests: [not_null]
+      - name: product
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["Starter","Pro","Business","Enterprise","Add-on: Analytics","Add-on: SSO"]
+      - name: issue_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["Billing","Online Ordering","Marketing / SEO","Product / Feature","Account Access","Onboarding"]
+      - name: issue_count
+        tests: [not_null]

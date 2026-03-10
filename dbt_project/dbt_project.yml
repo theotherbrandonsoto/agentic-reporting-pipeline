@@ -1,0 +1,17 @@
+name: compliance_monitor
+version: '1.0.0'
+config-version: 2
+
+profile: compliance_monitor
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  compliance_monitor:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+    insights:
+      +materialized: table

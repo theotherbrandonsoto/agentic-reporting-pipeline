@@ -1,0 +1,9 @@
+version: 2
+models:
+  - name: compliance_insights
+    description: "Dashboard-ready layer — monthly facts enriched with spike flags and historical averages"
+    columns:
+      - name: product
+        tests: [not_null]
+      - name: issue_type
+        tests: [not_null]

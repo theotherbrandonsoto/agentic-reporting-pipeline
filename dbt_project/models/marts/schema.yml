@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: fct_monthly_issues
+    description: "Monthly aggregated issue counts per product/issue_type with MTD window buckets"
+    columns:
+      - name: total_issues
+        tests: [not_null]
+      - name: product
+        tests: [not_null]
+      - name: issue_type
+        tests: [not_null]

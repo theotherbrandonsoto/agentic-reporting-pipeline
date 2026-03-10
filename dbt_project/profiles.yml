@@ -1,0 +1,6 @@
+compliance_monitor:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/compliance_monitor.duckdb
