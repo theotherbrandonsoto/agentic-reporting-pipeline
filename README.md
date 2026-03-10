@@ -186,8 +186,10 @@ compliance-monitor/
 │   ├── notify_slack.py           ← Weekly Slack alert
 │   └── notify_email.py           ← Monthly HTML email report
 ├── recipes/
-│   ├── weekly_slack_monitor.md   ← Goose recipe: weekly Slack post
-│   └── monthly_email_report.md  ← Goose recipe: monthly email
+│   ├── weekly-compliance-monitor-pipeline-runner.yaml   ← Goose recipe: weekly Slack post
+│   ├── monthly-compliance-monitor-pipeline-runner.yaml  ← Goose recipe: monthly email
+│   ├── weekly_slack_monitor.md                          ← Recipe instructions (human-readable)
+│   └── monthly_email_report.md                          ← Recipe instructions (human-readable)
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt

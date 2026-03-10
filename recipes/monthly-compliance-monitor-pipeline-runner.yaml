@@ -1,0 +1,14 @@
+version: 1.0.0
+title: Monthly Compliance Monitor Pipeline Runner
+description: A recipe for executing a multi-step compliance monitoring pipeline, including data generation, anomaly detection, dbt transformations, and stakeholder email notifications.
+instructions: |-
+  This recipe assists with running an end-to-end compliance monitoring pipeline from a local project directory. The workflow involves activating a Python virtual environment, sequentially executing scripts to generate compliance data reports, run anomaly/spike detection monitors, and trigger dbt model transformations, before finally dispatching a summary email to stakeholders. Each step is run in order and depends on the success of the previous one.
+
+  The assistant executes shell commands to navigate the project, activate the environment, and run each script in sequence, surfacing key outputs such as row counts, date ranges, flagged anomalies (with z-scores and percent deviations), dbt model pass/fail results, and email delivery confirmation. Results are summarized in a clear Markdown table with a highlights section calling out any detected spikes or issues requiring investigation.
+activities:
+- Run full pipeline end-to-end
+- Check for compliance spikes
+- Trigger stakeholder email
+- Run dbt models
+- Regenerate compliance reports
+parameters: []

@@ -1,0 +1,14 @@
+version: 1.0.0
+title: Weekly Compliance Monitor Pipeline Runner
+description: A recipe for executing an end-to-end compliance monitoring pipeline, including data generation, anomaly detection, dbt transformations, and automated SLACK reporting.
+instructions: |-
+  This recipe helps run a multi-step compliance monitoring pipeline from the command line. It sequentially activates a Python virtual environment, runs data generation and monitoring scripts, executes dbt models for data transformation, and sends a stakeholder email notification with findings. Each step is validated before proceeding to the next.
+
+  The pipeline is designed to be run on a scheduled or ad-hoc basis to surface statistically significant anomalies (e.g. z-score spikes) across product tiers and issue types. Output is summarized in a structured table format with key findings highlighted, including spike magnitudes and comparisons to historical averages. Results are sent automatically to SLACK.
+activities:
+- Run full pipeline
+- Check for compliance spikes
+- Send monthly stakeholder email
+- Regenerate compliance data
+- Run dbt models only
+parameters: []

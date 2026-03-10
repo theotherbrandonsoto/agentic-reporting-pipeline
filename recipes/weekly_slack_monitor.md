@@ -1,6 +1,6 @@
 ---
 title: Weekly Compliance Monitor — Slack Alert
-schedule: Every Monday at 8:00 AM
+schedule: Every Monday at 7:00 AM
 ---
 
 # Weekly MTD Spike Monitor
