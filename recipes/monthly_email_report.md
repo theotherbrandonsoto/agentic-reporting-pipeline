@@ -1,6 +1,6 @@
 ---
 title: Monthly Compliance Report — Email
-schedule: 1st of each month at 8:00 AM
+schedule: 1st of each month at 7:00 AM
 ---
 
 # Monthly Full Compliance Report
