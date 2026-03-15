@@ -4,6 +4,8 @@ An automated compliance reporting pipeline — demonstrating month-to-date spike
 
 **Author:** theotherbrandonsoto &nbsp;|&nbsp; [GitHub](https://github.com/theotherbrandonsoto) &nbsp;|&nbsp; [LinkedIn](https://www.linkedin.com/in/hirebrandonsoto/)
 
+*Built with assistance from Claude.*
+
 > **Part of a connected portfolio.** Products and issue taxonomy match the [metrics-store](https://github.com/theotherbrandonsoto/metrics-store) and [contact_transcript_analysis](https://github.com/theotherbrandonsoto/contact_transcript_analysis) projects, simulating a real multi-system analytics environment.
 
 ---
