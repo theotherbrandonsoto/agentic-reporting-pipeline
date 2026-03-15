@@ -1,4 +1,4 @@
-# 📋 Compliance Monitor
+# 📋 Agentic Reporting Pipeline
 
 An automated compliance reporting pipeline — demonstrating month-to-date spike detection, a multi-layer dbt pipeline, a Claude-powered stakeholder narrative, and Goose-orchestrated delivery via Slack and email.
 
