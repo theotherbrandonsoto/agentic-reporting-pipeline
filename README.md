@@ -26,7 +26,7 @@ What previously required a recurring manual pull, interpretation, and write-up i
 In a production environment, this pipeline would be scheduled via Airflow or Prefect rather than Goose Desktop, with results written to a shared data warehouse instead of a local DuckDB file. Planned feature additions include configurable alert thresholds per product line and a self-service Streamlit interface for stakeholders to explore spike history on demand.
 
 
-## 🧠 The Problem This Solves
+## 🧠 How This Helps
 
 Monthly compliance reports create a recurring blind spot: stakeholders only learn about spikes *after* the month closes. By then it's too late to intervene.
 
