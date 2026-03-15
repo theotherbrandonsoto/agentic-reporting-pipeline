@@ -8,6 +8,24 @@ An automated compliance reporting pipeline — demonstrating month-to-date spike
 
 ---
 
+## 📌 Executive Summary
+
+### The Business Problem
+Compliance teams at SaaS companies typically review issue volume once a month — after the reporting period closes. By the time a spike is visible, it's too late to act. Stakeholders are left reacting to problems instead of preventing them.
+
+### The Solution
+This pipeline runs a weekly mid-month monitor that compares current issue volume against 18 months of historical data using z-score statistics. When a spike is detected, it automatically generates a plain-English stakeholder briefing via Claude and delivers it to Slack and email — no analyst intervention required.
+
+### Project Impact
+
+Catching a compliance spike mid-month instead of at month-end gives teams a meaningful window to investigate and respond. A single undetected spike — depending on the issue type — can compound into regulatory exposure, customer churn, or operational backlogs that take multiple cycles to unwind. This pipeline turns a reactive, end-of-month process into a proactive one, surfacing anomalies while there's still time to act.
+
+What previously required a recurring manual pull, interpretation, and write-up is now fully automated end-to-end. A pipeline like this typically saves an analyst **3–5 hours per reporting cycle** in data gathering, narrative writing, and distribution — and eliminates the month-end surprise entirely.
+
+### Next Steps
+In a production environment, this pipeline would be scheduled via Airflow or Prefect rather than Goose Desktop, with results written to a shared data warehouse instead of a local DuckDB file. Planned feature additions include configurable alert thresholds per product line and a self-service Streamlit interface for stakeholders to explore spike history on demand.
+
+
 ## 🧠 The Problem This Solves
 
 Monthly compliance reports create a recurring blind spot: stakeholders only learn about spikes *after* the month closes. By then it's too late to intervene.
